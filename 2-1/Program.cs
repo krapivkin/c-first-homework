@@ -11,23 +11,4 @@ while (number.ToString().Length < 3 || number.ToString().Length > 3)
         number= Math.Abs(Convert.ToInt32(Console.ReadLine()));
     }
     catch (System.FormatException)
-    {
-        Console.WriteLine("Unknown error.");
-        break;
-    }
-    if (number.ToString().Length < 3 || number.ToString().Length > 3)
-    {
-        Console.WriteLine("Please enter three-digit number.");
-    }
-    else
-    {
-        int num2 = 0;
-        while (number.ToString().Length >= 2)
-        {
-            num2 = number % 10;
-            number = number / 10;
-        }
-        Console.WriteLine($"Secound digit of the number: {num2}");
-        break;
-    }
-}
+    
